@@ -1,13 +1,74 @@
 
 \begin{frame}
-    \frametitle{My testbed and my contributions}
-    \framesubtitle{QUIC sounds great!}
+    \frametitle{My testbed}
+    \framesubtitle{QUIC sounds great, but is it?}
 
     \begin{overprint}
         \uncover<+->{}
 
-        I've been testing QUIC in limited network scenarios in order to explore how QUIC performs during web browsing over poor network conditions. Available measurements of QUIC seems to focus mostly on the best-case scenarios for QUIC and HTTP/2 with high bandwidth-delay product.
+        \uncover<+->{
+    I've been testing QUIC in limited network scenarios in order to explore how QUIC performs during web browsing over poor network conditions.}
+        ~\\
+        ~\\
+        \uncover<+->{Available measurements of QUIC seems to focus mostly on the best-case scenarios for QUIC and HTTP/2 with high bandwidth-delay product. }
     \end{overprint}
 
 \end{frame}
 
+% ------------------------------------
+
+\begin{frame}
+    \frametitle{My testbed}
+    %\framesubtitle{}
+
+    \begin{overprint}
+        \uncover<+->{}
+
+        \uncover<+->{\center\includegraphics[width=0.7\textwidth]{../master-thesis/figures/testbench.pdf}}
+
+    \end{overprint}
+
+\end{frame}
+
+% ------------------------------------
+
+\begin{frame}
+    \frametitle{My testbed}
+    %\framesubtitle{}
+
+    \begin{overprint}
+        \uncover<+->{}
+
+        \uncover<+->{Loads pre-downloaded content from 42 of Alexas top 100 webpages over a virtualized bottleneck link.}
+        ~\\
+        ~\\
+        \uncover<+->{Measures network load times and how much data the browser managed to fetch.}
+        ~\\
+        ~\\
+        \uncover<+->{Uses 16 different scenarios, each tested with both a persistent connection as well as a new connection for each page load.} \note{Scenario here means different properties of the bottleneck link.}
+
+    \end{overprint}
+
+\end{frame}
+
+% ------------------------------------
+
+\begin{frame}
+    \frametitle{My testbed}
+    \framesubtitle{Scenario categories}
+
+    \begin{overprint}
+        \uncover<+->{}
+        \begin{itemize}
+                \uncover<+->{
+                \item Baseline}
+                \uncover<+->{
+                \item Bandiwdth limited}
+                \uncover<+->{
+                \item Latency added}
+                \uncover<+->{
+                \item Loss added}
+        \end{itemize}
+    \end{overprint}
+
+\end{frame}

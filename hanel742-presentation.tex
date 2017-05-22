@@ -6,8 +6,8 @@
 %% With LiU font, LuaLaTeX needs to be used and Korolev LiU and Georgi need to be installed
 %% With calibri font, LuaLaTeX needs to be used and Calibri need to be installed
 
-%\documentclass[noamsthm, english]{beamer}
 \documentclass[noamsthm, english]{beamer}
+%\documentclass[noamsthm, english, handout]{beamer}
 
 \usepackage[T1]{fontenc}
 \usepackage{babel}
@@ -28,7 +28,7 @@ font=liu,%
 %highcontrast,%
 %superhighcontrast,%
 %% Remove outline before each section and end page with {nooutline, noendpage}
-nooutline, %
+%nooutline, %
 %noendpage,%
 %% Add navigation symbols with {navigation}
 %navigation,%
@@ -46,7 +46,9 @@ nooutline, %
 ]{LiU}
 
 %% Add a text on end page, leave blank to add author
-\finaltext{Thank you for YOUR time!}
+\finaltext{Hans-Filip Elo \\ ~\\ [-0.5em]%
+    \small \href{hanel742@student.liu.se}%
+{hanel742@student.liu.se}\vspace{0.5em}}
 
 %% Presentation information
 \title[]{Exploring web protocols for use
@@ -65,16 +67,24 @@ Linköping University}
 \begin{document}
 
 \maketitle
-\makeoutline
+%\makeoutline
 
 %\section{Section title}
 %\subsection{Sub section title}
 
-\section{Why does QUIC exist?}
-\section{My test and my contributions}
-\section{Results}
 
+\section{Why does QUIC exist?}
+%\LiUframe[green]{Why does QUIC exist?}
 \include{why-quic}
+
+\section{My test and my contributions}
+%\makeoutline
+%\LiUframe[green]{My test and my contributions}
 \include{my-testbed}
+
+\section{Results}
+%\makeoutline
+%\LiUframe[green]{Results}
+\include{results}
 
 \end{document}
