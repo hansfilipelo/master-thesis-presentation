@@ -5,7 +5,7 @@
 %% With standard font, LuaLaTeX needs to be used and Calibri and Georgia need to be installed
 %% With LiU font, LuaLaTeX needs to be used and Korolev LiU and Georgi need to be installed
 %% With calibri font, LuaLaTeX needs to be used and Calibri need to be installed
- 
+
 \documentclass[noamsthm, english]{beamer}%
 
 \usepackage[T1]{fontenc}%
@@ -43,7 +43,7 @@
 	{\usebeamerfont{header}%
 	{{\usebeamercolor[fg]{orange inverse}\textbackslash begin \{#1\}}}%
 	{\usebeamercolor[fg]{green inverse}[#2]}%
-	#3%	
+	#3%
 	{{\usebeamercolor[fg]{orange inverse}\textbackslash end \{#1\}}}}%
 	\end{center}%
 }
@@ -67,7 +67,7 @@ complementary=orange,%
 %% All colors {blue, green, turquoise, orange, purple, yellow, gray} for blocks
 blockcolor=blue,%
 %% Font schemes {latex, standard, sansserif, calibri, liu} to use
-font=standard,%
+font=liu,%
 %% Select color themes {highcontrast, superhighcontrast, dark} with high contrast or add handout option in documentclass
 %highcontrast,%
 %superhighcontrast,%
@@ -80,7 +80,7 @@ font=standard,%
 totalframes,%
 % Remove parts of header with {noheadertitle, noheaderauthor, noheaderdate, noheadernumber, minimalheader, noheader}
 %noheadertitle,%
-%noheaderauthor,% 
+%noheaderauthor,%
 %noheaderdate,%
 %noheadernumber,%
 %% Show outline in two columns
@@ -99,8 +99,8 @@ outlinecolumns=2,%
 \title[LiU Slides Documentation]{LiU Slides Theme Documentation}%
 \subtitle{A guide to getting started with LiU slides}%
 \author{Clas Veibäck}%
-\institute{Automatic Control\\% 
-Department of Electrical Engineering\\% 
+\institute{Automatic Control\\%
+Department of Electrical Engineering\\%
 Linköping University}%
 \date{\today}%
 
@@ -120,12 +120,12 @@ Linköping University}%
 \frametitle{Disclaimer}
 This theme is approved by the Communications and Marketing Division at Linköping University, but is provided ``as is'', without warranty of any kind by the author or the Communications and Marketing Division.
 \\~\\
-Bugs, comments and suggestions for improvements can be sent to Clas Veibäck at \href{mailto:clas.veiback@liu.se}{clas.veiback@liu.se}. 
+Bugs, comments and suggestions for improvements can be sent to Clas Veibäck at \href{mailto:clas.veiback@liu.se}{clas.veiback@liu.se}.
 \end{frame}
 
 \begin{frame}
 \frametitle{Introduction}
-This theme is based on the PowerPoint template provided by the Communications and Marketing Division and adheres to the graphic profile at Linköping University. 
+This theme is based on the PowerPoint template provided by the Communications and Marketing Division and adheres to the graphic profile at Linköping University.
 \\~\\
 The theme is provided to simplify the process of making a LiU presentation.
 \end{frame}
@@ -205,7 +205,7 @@ Do not use a frame title for these frames.
 \\LiUframe[blue]\{
 \hspace{1em}\\raggedright
 \hspace{1em}\\usebeamerfont\{title\}
-\hspace{2em}``You're the all~singing, all~dancing 
+\hspace{2em}``You're the all~singing, all~dancing
 \hspace{2em}crap of the world.''\\par
 \hspace{1em}\{\\raggedleft \\usebeamerfont\{subtitle\}
 \hspace{2em}--- Tyler Durden\\par\}
@@ -349,7 +349,7 @@ An end page is automatically shown as the final slide and should normally not be
 \begin{description}[standard]
 \item[latex] Use native latex fonts, pdfLaTeX can be used, default
 \item[standard] Use Calibri and Georgia
-\item[sansserif] Use native latex with normal text in sans serif 
+\item[sansserif] Use native latex with normal text in sans serif
 \item[calibri] Use Calibri for all text
 \item[liu] Use Korolev LiU and Georgia
 \end{description}

@@ -1,16 +1,34 @@
 
+%\begin{frame}
+%    \frametitle{My testbench}
+%    \framesubtitle{QUIC sounds great, but is it?}
+%
+%    \begin{overprint}
+%        \uncover<+->{}
+%
+%        \uncover<+->{
+%    I've been testing QUIC in limited network scenarios in order to explore how QUIC performs during web browsing over poor network conditions.}
+%        ~\\
+%        ~\\
+%
+%
+%    \end{overprint}
+%
+%\end{frame}
+
+% ------------------------------------
+
 \begin{frame}
     \frametitle{My testbench}
-    \framesubtitle{QUIC sounds great, but is it?}
 
     \begin{overprint}
         \uncover<+->{}
 
         \uncover<+->{
-    I've been testing QUIC in limited network scenarios in order to explore how QUIC performs during web browsing over poor network conditions.}
+        Linux network namespaces in conjunction with queuing diciplines (qdiscs).}
         ~\\
         ~\\
-        \uncover<+->{Available measurements of QUIC seems to focus mostly on the best-case scenarios for QUIC and HTTP/2 with high bandwidth-delay product. }
+        \uncover<+->{Using a tool called chrome-har-capturer for browser automation and measurements. }
     \end{overprint}
 
 \end{frame}
@@ -21,20 +39,11 @@
     \frametitle{My testbench}
     %\framesubtitle{}
 
+    \begin{overprint}
 
-        \center\includegraphics[width=0.7\textwidth]{../master-thesis/figures/testbench.pdf}
+        \uncover<+->{\center\includegraphics[width=0.7\textwidth]{../master-thesis/figures/testbench.pdf}}
 
-
-\end{frame}
-
-% ------------------------------------
-
-\begin{frame}
-    \frametitle{My testbench}
-    %\framesubtitle{}
-
-        \center\includegraphics[width=1.1\textwidth]{../master-thesis/figures/testbed-workflow.pdf}
-
+    \end{overprint}
 
 \end{frame}
 
@@ -45,6 +54,20 @@
     %\framesubtitle{}
 
     \begin{overprint}
+
+        \uncover<+->{\center\includegraphics[width=1.1\textwidth]{../master-thesis/figures/testbed-workflow.pdf}}
+
+    \end{overprint}
+
+\end{frame}
+
+% ------------------------------------
+
+\begin{frame}
+    \frametitle{My testbench}
+    \framesubtitle{The content loaded over the network}
+
+    \begin{overprint}
         \uncover<+->{}
 
         \uncover<+->{Loads pre-downloaded content from 42 of Alexas top 100 webpages over a virtualized bottleneck link.}
@@ -53,7 +76,7 @@
         \uncover<+->{Measures network load times and how much data the browser managed to fetch.}
         ~\\
         ~\\
-        \uncover<+->{Uses 18 different network scenarios.} \note{Scenario here means different properties of the bottleneck link.}
+        \uncover<+->{Uses 16 different scenarios, each tested with both a persistent connection as well as a new connection for each page load.} \note{Scenario here means different properties of the bottleneck link.}
 
     \end{overprint}
 

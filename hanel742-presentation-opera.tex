@@ -1,0 +1,94 @@
+%% Copyright 2015 by Clas Veibäck, Automatic Control, Linköping University
+
+%% Notes on usage
+%% With latex and sansserif fonts, pdfLaTeX can be used
+%% With standard font, LuaLaTeX needs to be used and Calibri and Georgia need to be installed
+%% With LiU font, LuaLaTeX needs to be used and Korolev LiU and Georgi need to be installed
+%% With calibri font, LuaLaTeX needs to be used and Calibri need to be installed
+
+%\documentclass[noamsthm, english]{beamer}
+\documentclass[noamsthm, english, handout]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+%\usepackage{pgfpages}
+
+\usetheme[
+%% Standard colors {blue, green, turquoise} for title, outline and end pages
+titlecolor=blue,%
+outlinecolor=green,%
+endcolor=turquoise,%
+%% Complementary colors {orange, purple, yellow, gray} for some details
+complementary=orange,%
+%% All colors {blue, green, turquoise, orange, purple, yellow, gray} for blocks
+blockcolor=blue,%
+%% Font schemes {latex, standard, sansserif, calibri, liu} to use
+font=liu,%
+%% Select color themes {highcontrast, superhighcontrast, dark} with high contrast or add handout option in documentclass
+%highcontrast,%
+%superhighcontrast,%
+%% Remove outline before each section and end page with {nooutline, noendpage}
+nooutline, %
+%noendpage,%
+%% Add navigation symbols with {navigation}
+%navigation,%
+%% Add total number of frames to frame count with {totalframes}
+%totalframes,%
+% Remove parts of header with {noheadertitle, noheaderauthor, noheaderdate, noheadernumber, minimalheader, noheader}
+%noheadertitle,%
+%noheaderauthor,%
+%noheaderdate,%
+%noheadernumber,%
+%% Show institute in title frame
+%showinstitute,
+%% Show outline in two columns
+%outlinecolumns,
+]{LiU}
+
+%% Add a text on end page, leave blank to add author
+\finaltext{Hans-Filip Elo \\ ~\\ [-0.5em]%
+    \small \href{hanel742@student.liu.se}%
+{hanel742@student.liu.se}\vspace{0.5em}}
+
+%% Presentation information
+\title[]{Exploring web protocols for use
+on cellular networks}
+\subtitle{QUIC on really poor network links}
+\author{Hans-Filip Elo}
+\institute{IDA \\
+Your department \\
+Linköping University}
+\date{\today}
+
+% Show notes on second screen
+%\setbeameroption{show notes on second screen}
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+\maketitle
+\makeoutline
+
+%\section{Section title}
+%\subsection{Sub section title}
+
+\section{Why look at QUIC?}
+%\makeoutline
+\LiUframe[green]{\frametitle{Why look at QUIC?}}
+\include{why-quic-opera}
+
+\section{My test and my contributions}
+%\makeoutline
+\LiUframe[green]{\frametitle{My test and my contributions}}
+\include{my-testbed-opera}
+
+\section{Results}
+%\makeoutline
+\LiUframe[green]{\frametitle{Results}}
+\include{results}
+\LiUframe[green]{\frametitle{Questions?}}
+
+\section{Demo: Network limited shell}
+\LiUframe[green]{\frametitle{Demo}}
+
+\end{document}
